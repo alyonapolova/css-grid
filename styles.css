@@ -77,14 +77,30 @@
     padding: 24px 48px;
   }
 }
-
-.post-title {
-  color: var(--common-white);
-  font-family: var(--common-font);
+.blog {
+  display: grid;
+  gap: 48px;
 }
 
 .blog-link {
   color: var(--common-black);
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .blog {
+    gap: 36px;
+  }
+  .blog-link {
+    gap: 24px;
+    grid-template-columns: 264px 1fr;
+  }
+}
+
+.post-title {
+  color: var(--common-white);
+  font-family: var(--common-font);
 }
 
 .blog-title {
